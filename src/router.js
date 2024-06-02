@@ -2,7 +2,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  // Define your routes here
+  {
+    path: '/',
+    name: 'Home',
+    component: () => import('./views/homePage.vue'),
+  },
 ];
 
 const router = createRouter({

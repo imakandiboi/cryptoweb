@@ -1,6 +1,9 @@
 <template>
   <section>
     <NavBar />
+    <main>
+      <router-view/>
+    </main>
   </section>
 </template>
 
