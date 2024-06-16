@@ -195,6 +195,9 @@
       <div class="word-contain">
         <h2 class="h2cap">A safe place for your crypto</h2>
       </div>
+      <div class="word-contain">
+        <h4 class="h4cap">A safe place for your crypto</h4>
+      </div>
     </div>
   </div>
 </template>
@@ -288,7 +291,7 @@ export default {
 .word-contain {
   display: flex;
   white-space: break-spaces;
-  justify-content: left;
+  justify-content: center;
   order: 0;
   width: 100%;
 }
@@ -296,6 +299,31 @@ export default {
 .h2cap {
   margin: 0px 0px 8px;
 }
+
+.h2cap {
+  font-size: 48px;
+  color: rgb(77, 79, 79);
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.64px;
+  max-width: 896px;
+  margin-bottom: 13px;
+}
+
+.h4cap {
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: -1px;
+
+  color: rgb(77, 79, 79);
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -1px;
+  max-width: 750px;
+  margin-bottom: 16px;
+}
+
 /* Styles for screens with a minimum width of 1024px */
 @media screen and (min-width: 1024px) {
   .h2cap {
@@ -303,9 +331,9 @@ export default {
     line-height: 60px;
     letter-spacing: -2.64px;
   }
-} 
+}
 
- @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .h2cap {
     font-size: 48px;
     color: rgb(77, 79, 79);
@@ -316,6 +344,6 @@ export default {
     max-width: 896px;
     margin-bottom: 13px;
   }
-} 
+}
 </style>
   
