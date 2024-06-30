@@ -3,34 +3,52 @@
     <section class="homepage-header container-fluid d-flex justify-content-end">
       <BannerComponent />
     </section>
-    <ProductComponent/>
+
+    <section class="homepage-services container-fluid d-flex justify-content-between">
+      <WhyinvestComponent />
+    </section>
+
+
+    <section class="homepage-process">
+    <InvestBenefits />
+  </section>
+
+
+  <section class="">
+
+
+    <ProductComponent />
+  </section>
   </div>
 </template>
 
 <script>
 import BannerComponent from "@/components/HomeComponents/BannerComponent.vue";
-import ProductComponent from '@/components/HomeComponents/ProductComponent.vue';
+import ProductComponent from "@/components/HomeComponents/ProductComponent.vue";
+import WhyinvestComponent from "@/components/HomeComponents/WhyinvestComponent.vue";
+import InvestBenefits from "@/components/HomeComponents/InvestBenefits.vue"
 
 
 export default {
   components: {
     BannerComponent,
     ProductComponent,
+    WhyinvestComponent,
+    InvestBenefits
   },
 };
 </script>
 
 <style>
-
 .container-fluid {
   width: 80%;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .homepage-head-title {
   margin-bottom: 76px;
   max-width: 740px;
-  color: #16205F;
+  color: #16205f;
 }
 .homepage-head-title h2 {
   font-size: 46px;
@@ -67,31 +85,32 @@ export default {
   margin-top: 166px;
 }
 .homepage-carousel .homepage-head-title h2 {
-    max-width: 100%;
-    margin-bottom: 90px;
+  max-width: 100%;
+  margin-bottom: 90px;
 }
 .carousel__item img {
-    max-width: 210px;
+  max-width: 210px;
 }
 .carousel-wrapper {
-    position: relative;
-    padding-right: 80px;
+  position: relative;
+  padding-right: 80px;
 }
 .custom-navigation {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .custom-navigation img {
-    cursor: pointer;
+  cursor: pointer;
 }
 .homepage-carousel-client {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 @media (max-width: 768px) {
   .homepage-carousel-client {
     background: #ffffff;
     padding: 0;
   }
-}</style>
+}
+</style>

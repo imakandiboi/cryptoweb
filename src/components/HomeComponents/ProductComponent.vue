@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5">
+  <div class="container product-section">
     <div class="card-container">
       <div class="row" style="margin: 30px 20px">
         <div class="col-md-4">
@@ -218,6 +218,11 @@ export default {
 </script>
   
   <style>
+.product-section{
+
+  margin-top: 100px;
+}
+
 .card-img-top {
   width: 100px; /* Adjust as needed */
   margin: 0 auto; /* Center the image */
@@ -238,9 +243,12 @@ export default {
   width: 100%;
   padding-left: 32px;
   padding-right: 32px;
+  max-width: 1450px;
 }
 .card-title {
-  font-size: 28px;
+
+  text-align: left;
+    font-size: 50px;
 }
 
 .card-body .image {
@@ -276,7 +284,7 @@ export default {
 }
 .caption-container {
   width: 100%;
-  max-width: 1130px;
+  max-width: 1430px;
 }
 
 .caption-container {
