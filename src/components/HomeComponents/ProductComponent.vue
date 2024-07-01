@@ -83,13 +83,13 @@
 export default {
   name: "ProductComponent",
   data() {
-    // return {
-    //   images: {
-    //     card1: require("@/assets/images/card-11.avif"),
-    //     card2: require("@/assets/images/image-ph.webp"),
-    //     //   card3: require('@/assets/nfts.png')
-    //   },
-    // };
+    return {
+      images: {
+        card1: require("@/assets/images/card-11.avif"),
+        card2: require("@/assets/images/image-ph.webp"),
+        //   card3: require('@/assets/nfts.png')
+      },
+    };
   },
 };
 </script>
