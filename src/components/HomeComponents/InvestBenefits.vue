@@ -98,7 +98,7 @@ name: " InvestBenfits"
 
 .homepage-process-method img {
     filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(312deg) brightness(109%) contrast(100%);
-    ;
+   width: 80px ;
 }
 
 .homepage-process-method-title h2 {

@@ -14,7 +14,7 @@
   </section>
 
 
-  <section class="">
+  <section class=" ">
 
 
     <ProductComponent />
