@@ -19,6 +19,17 @@
 
     <ProductComponent />
   </section>
+
+
+  <section class="homepage-speacialized">
+    <HomeSpeacialized />
+  </section>
+
+
+  <section class="homepage-carousel homepage-carousel-tech container-fluid">
+    <OfferCarousel />
+  </section>
+
   </div>
 </template>
 
@@ -27,14 +38,18 @@ import BannerComponent from "@/components/HomeComponents/BannerComponent.vue";
 import ProductComponent from "@/components/HomeComponents/ProductComponent.vue";
 import WhyinvestComponent from "@/components/HomeComponents/WhyinvestComponent.vue";
 import InvestBenefits from "@/components/HomeComponents/InvestBenefits.vue"
-
+import HomeSpeacialized from '@/components/HomeComponents/HomeSpeacializedComponent.vue'
+import OfferCarousel from '@/components/HomeComponents/OfferCarousel.vue'
 
 export default {
   components: {
     BannerComponent,
     ProductComponent,
     WhyinvestComponent,
-    InvestBenefits
+    InvestBenefits,
+    HomeSpeacialized,
+    OfferCarousel
+
   },
 };
 </script>
