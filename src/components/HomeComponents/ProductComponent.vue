@@ -1,321 +1,215 @@
 <template>
-<div class="container">
-
-  <div class="card-container">
-      <a href="/" class="hero-image-container">
-        <img class="hero-image" src="@/assets/images/card-11.avif" alt="Spinning glass cube"/>
-      </a>
-      <main class="main-content">
-        <h1><a href="#">Equilibrium #3429</a></h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div class="flex-row">
-          <div class="coin-base">
-            <img src="https://i.postimg.cc/T1F1K0bW/Ethereum.png" alt="Ethereum" class="small-image"/>
-            <h2>0.041 ETH</h2>
-          </div>
-          <div class="time-left">
-            <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
-            <p>3 days left</p>
-          </div>
-        </div>
-      </main>
-      <div class="card-attribute">
-        <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
-        <p>Creation of <span><a href="#">Jules Wyvern</a></span></p>
-      </div>
-    </div>
-
-
-  <div class="card-container">
-      <a href="/" class="hero-image-container">
-        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
-      </a>
-      <main class="main-content">
-        <h1><a href="#">Equilibrium #3429</a></h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div class="flex-row">
-          <div class="coin-base">
-            <img src="https://i.postimg.cc/T1F1K0bW/Ethereum.png" alt="Ethereum" class="small-image"/>
-            <h2>0.041 ETH</h2>
-          </div>
-          <div class="time-left">
-            <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
-            <p>3 days left</p>
-          </div>
-        </div>
-      </main>
-      <div class="card-attribute">
-        <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
-        <p>Creation of <span><a href="#">Jules Wyvern</a></span></p>
-      </div>
-    </div>
-  
+  <div class="container product-section">
     <div class="card-container">
-      <a href="/" class="hero-image-container">
-        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
-      </a>
-      <main class="main-content">
-        <h1><a href="#">Equilibrium #3429</a></h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div class="flex-row">
-          <div class="coin-base">
-            <img src="https://i.postimg.cc/T1F1K0bW/Ethereum.png" alt="Ethereum" class="small-image"/>
-            <h2>0.041 ETH</h2>
-          </div>
-          <div class="time-left">
-            <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image"/>
-            <p>3 days left</p>
+      <div class="row" style="margin: 30px 20px">
+        <div class="col-md-4">
+          <div class="card card-1 mb-3">
+            <div class="card-body text-center">
+              <img :src="images.card1" class="card-img-top image mb-3" alt="Credit Card" />
+              <h5 class="card-title fw-lighter">Invest when you spend</h5>
+              <p class="card-text">Engaging with crypto involves risks, including the risk of your crypto rewards declining in value over time. Past performance no guarantee of future results. A Gemini Mastercard. Issued by WebBank. Terms apply.</p>
+
+              <div class="card-button">
+                <a href="#" class="btn">Credit Card</a>
+                <picture class="button-pic"
+                  ><source media="(max-width: 767px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(max-width: 767px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <img src="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" alt="FootIcon-Arrow" style="object-fit: inherit" loading="lazy" decoding="async"
+                /></picture>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-      <div class="card-attribute">
-        <img src="https://i.postimg.cc/SQBzNQf1/image-avatar.png" alt="avatar" class="small-avatar"/>
-        <p>Creation of <span><a href="#">Jules Wyvern</a></span></p>
+        <div class="col-md-4">
+          <div class="card card-1 mb-3">
+            <div class="card-body text-center">
+              <img :src="images.card2" class="card-img-top image mb-3" alt="Credit Card" />
+              <h5 class="card-title fw-lighter">Invest when you spend</h5>
+              <p class="card-text">Engaging with crypto involves risks, including the risk of your crypto rewards declining in value over time. Past performance no guarantee of future results. A Gemini Mastercard. Issued by WebBank. Terms apply.</p>
+
+              <div class="card-button">
+                <a href="#" class="btn">Credit Card</a>
+                <picture class="button-pic"
+                  ><source media="(max-width: 767px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(max-width: 767px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <img src="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" alt="FootIcon-Arrow" style="object-fit: inherit" loading="lazy" decoding="async"
+                /></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-1 mb-3">
+            <div class="card-body text-center">
+              <img :src="images.card1" class="card-img-top image mb-3" alt="Credit Card" />
+              <h5 class="card-title fw-lighter">Invest when you spend</h5>
+              <p class="card-text">Engaging with crypto involves risks, including the risk of your crypto rewards declining in value over time. Past performance no guarantee of future results. A Gemini Mastercard. Issued by WebBank. Terms apply.</p>
+
+              <div class="card-button">
+                <a href="#" class="btn">Credit Card</a>
+                <picture class="button-pic"
+                  ><source media="(max-width: 767px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(max-width: 767px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/avif" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <source media="(min-width: 768px)" height="48" width="48" type="image/webp" srcset="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" />
+                  <img src="https://images.ctfassets.net/jg6lo9a2ukvr/1CfiSzsaaYfUpdoaXDr2uZ/ad1a596b5faed8ca54bcaddba656775c/arrow-btn.svg" alt="FootIcon-Arrow" style="object-fit: inherit" loading="lazy" decoding="async"
+                /></picture>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-</div>
+    <div class="caption-container">
+      <div class="word-contain">
+        <h2 class="h2cap">A safe place for your crypto</h2>
+      </div>
+      <div order="0" class="word-contain">
+        <h4 class="h4cap">We’re focused on providing innovative security solutions to protect your assets.</h4>
+      </div>
+      <div order="0" class="word-contain">
+        <span class="sc-57d69569-1 igZMsG">
+          <a id="register-heading" href="/security">
+            <p class="sc-bbc06255-0 gQulQT cursor-pointer">Learn more about our security measures</p>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
-  name: "ProductComponent",
+  name: 'ProductComponent',
   data() {
     return {
       images: {
-        card1: require("@/assets/images/card-11.avif"),
-        card2: require("@/assets/images/image-ph.webp"),
+        card1: require('@/assets/images/card-11.avif'),
+        card2: require('@/assets/images/image-ph.webp'),
         //   card3: require('@/assets/nfts.png')
       },
-    };
+    }
   },
-};
+}
 </script>
   
   <style>
-  /* Container for flexbox */
-.container {
+.card-img-top {
+  width: 100px; /* Adjust as needed */
+  margin: 0 auto; /* Center the image */
+}
+.card-1 {
+  background: rgb(238, 249, 207);
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 40px 10px 40px 10px;
   justify-content: center;
-  gap: 2rem; /* Gap between cards */
-  padding: 1rem; /* Padding around the container */
+  text-decoration: aqua;
 }
-
-  
-  /* 
-=========================
-Fonts
-=========================
-
-font-family: 'Outfit', sans-serif;
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-
-/* 
-========================
-Variables
-========================
-*/
-
-
-:root {
-    
-    font-size: 15px;
-    
-    /* Primary */
-    --var-soft-blue: hsl(215, 51%, 70%);
-    --var-cyan: hsl(178, 100%, 50%);
-    /* Neutral */
-    --var-main-darkest: hsl(53, 44%, 34%);
-    --var-card-dark: hsl(216, 50%, 16%);
-    --var-line-dark: hsl(215, 32%, 27%);
-    --var-lightest: white;
-    
-    /* Fonts */
-    
-    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
-    
-    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
-    
-    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
-}
-
-/* 
-=======================
-Setup
-=======================
-*/
-
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-}
-
-body {
-  display:flex;
-  
-}
-
-img {
-    width: 100%;
-    border-radius: 15px;
-    display: block;
-}
-
-a {
-    color: inherit;
-}
-
-/* 
-
-Eye view
-
-https://i.postimg.cc/9MtT4GZY/view.png' border='0' alt='view */
-
-/*
-=========================
-Font Styling
-=========================
-*/
-
-h1 {
-    font: var(--var-heading);
-    color: var(--var-lightest);
-    padding: 1.2em 0;
-}
-
-h2 {
-    font: var(--var-small-heading);
-    color: var(--var-lightest);
-    /* padding on .coin-base */
-}
-
-p {
-    font: var(--var-para);
-    color: var(--var-soft-blue);
-}
-
-span {
-    color: white;
-}
-/* 
-=====================
-Classes
-=====================
-*/
-
-/* LAYOUT */
-
 .card-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 2em auto;
-    background-color: var(--var-card-dark);
-    border-radius: 15px;
-    margin-bottom: 1rem;
-    padding: 2rem;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 1450px;
+}
+.card-title {
+
+  text-align: left;
+    font-size: 50px;
 }
 
-div.flex-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card-body .image {
+  width: 12 0px;
 }
 
-div.coin-base, .time-left, .card-attribute {
-    display: flex;
-    align-items: center;
-    padding: 1em 0;
+.card-text {
+  font-size: 12px;
 }
 
-.card-attribute {
-    padding-bottom: 1.5em;
-    border-top: 2px solid var(--var-line-dark);
+.card-button {
+  width: 100%;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  height: auto;
+  max-width: calc(100% - 48px);
+  bottom: 23px;
+  left: 23px;
+  z-index: 3;
+  -moz-box-align: center;
+  align-items: center;
 }
 
-a.hero-image-container {
-    position: relative;
-    display: block;
+.button-pic {
+  height: auto;
+  border: medium none;
+  width: auto;
+  background-color: transparent;
+  border-radius: 100%;
+  min-width: auto;
+  padding: 0px;
+}
+.caption-container {
+  width: 100%;
+  max-width: 1430px;
 }
 
-
-
-/* Details */
-
-img.eye {
-    position: absolute;
-    width: 100%;
-    max-width: 2em;
-    top: 44%;
-    left: 43%;
+.caption-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 110px auto 16px;
+  position: relative;
+  z-index: 10;
 }
 
-@media (min-width:400px) {
-  img.eye {
-    max-width: 3em;
-}
-}
-
-.hero-image-container::after {
-    content: '';
-    background-image: url("https://i.postimg.cc/9MtT4GZY/view.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 5rem;
-    background-color: hsla(178, 100%, 50%, 0.3);
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
+.word-contain {
+  display: flex;
+  white-space: break-spaces;
+  justify-content: center;
+  order: 0;
+  width: 100%;
 }
 
-.hero-image-container:hover::after {
-  opacity: 1;
+.h2cap {
+  margin: 0px 0px 8px;
 }
 
-.small-image {
-    width: 1.2em;
-    margin-right: .5em;
+.h4cap {
+  font-size: 30px;
+  line-height: 60px;
+  color: rgb(77, 79, 79);
+  letter-spacing: -1.64px;
 }
 
-.small-avatar {
-    width: 2em;
-    border-radius: 200px;
-    outline: 2px solid white;
-    margin-right: 1.4em;
+/* Styles for screens with a minimum width of 1024px */
+@media screen and (min-width: 1024px) {
+  .h2cap {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -2.64px;
+  }
 }
 
-div.attribution {
-    margin: 0 auto;
-    width: 100%;
-    font: var(--var-para);
+@media screen and (min-width: 1024px) {
+  .h2cap {
+    font-size: 48px;
+    color: rgb(77, 79, 79);
+    font-weight: 700;
+    line-height: 48px;
     text-align: center;
-    padding: 1.5em 0 4em 0;
-    color: var(--var-line-dark);
-}
-.attribution a {
-    color: var(--var-soft-blue);
-}
-
-@media (min-width:600px) {
-    body {
-        font-size: 18px;
-    }
+    letter-spacing: -2.64px;
+    max-width: 896px;
+    margin-bottom: 13px;
+  }
 }
 </style>
-  
