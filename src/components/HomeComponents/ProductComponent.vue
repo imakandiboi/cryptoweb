@@ -3,7 +3,7 @@
 
   <div class="card-container">
       <a href="/" class="hero-image-container">
-        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+        <img class="hero-image" src="@/assets/images/card-11.avif" alt="Spinning glass cube"/>
       </a>
       <main class="main-content">
         <h1><a href="#">Equilibrium #3429</a></h1>
