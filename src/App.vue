@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import NavBar from './components/LayOut/NavBar.vue'
+import NavBar from '@/components/LayOut/NavBar.vue'
 import Footer from './components/LayOut/Footer.vue'
 export default {
   name: 'App',

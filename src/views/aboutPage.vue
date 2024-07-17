@@ -10,7 +10,7 @@
             <p>From full-time remote engineering teams to hourly contractors, work with remote devs as needed</p>
             
             <div class="howtostart-getstart-content d-flex justify-content-between">
-                <!-- <ArticlesComponent :data="servicesData" /> -->
+                <ArticlesComponent :data="servicesData" />
             </div>
         </div>
 
@@ -42,43 +42,50 @@
         </span>
     </div>
 
-    <!-- <ConsultationComponent /> -->
+    <ConsultationComponent />
 </template>
 
 <script>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-
+import HeaderComponent from '@/components/HeaderComponent.vue'
+import ArticlesComponent from '@/components/ArticlesComponent.vue';
+import ConsultationComponent from '@/components/ConsultationComponent.vue';
+// Images
+import RequestImg from '@/assets/svg/email.svg'
+import InterviewImg from '@/assets/svg/online-conference.svg'
+import HireImg from '@/assets/svg/handshake-big.svg'
 
 export default {
-    name: "aboutPage",
-
-component:{
-HeaderComponent,
-},
- data() {
+    name: "HowtostartView",
+    components: {
+        HeaderComponent,
+        ArticlesComponent,
+        ConsultationComponent
+    },
+    data() {
         return {
-            // servicesData: [
-            //     {
-            //         "imgUrl": RequestImg,
-            //         "title": '01. Request',
-            //         "desc": 'Tell us more about your requirements and technical needs'
-            //     },
-            //     {
-            //         "imgUrl": InterviewImg,
-            //         "title": '02. Interview',
-            //         "desc": 'You interview candidates. Average 2 interviews to hire.'
-            //     },
-            //     {
-            //         "imgUrl": HireImg,
-            //         "title": '03. Hire',
-            //         "desc": 'You choose who to hire, and we handle all the paperwork.'
-            //     },
+            servicesData: [
+                {
+                    "imgUrl": RequestImg,
+                    "title": '01. Request',
+                    "desc": 'Tell us more about your requirements and technical needs'
+                },
+                {
+                    "imgUrl": InterviewImg,
+                    "title": '02. Interview',
+                    "desc": 'You interview candidates. Average 2 interviews to hire.'
+                },
+                {
+                    "imgUrl": HireImg,
+                    "title": '03. Hire',
+                    "desc": 'You choose who to hire, and we handle all the paperwork.'
+                },
 
-            // ]
+            ]
         }
     },
 }
 </script>
+
 <style>
 .howtostart-container {
     color: #16205F;

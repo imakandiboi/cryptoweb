@@ -1,25 +1,4 @@
-<script>
-export default {
-    methods: {
-        dismissOffcanvas() {
-            const offcanvasElement = document.querySelector('.offcanvas');
-            const backdropElements = document.querySelectorAll('.offcanvas-backdrop');
 
-            // Remove the 'show' class from the offcanvas element
-            offcanvasElement.classList.remove('show');
-
-            // Remove the backdrop elements
-            backdropElements.forEach((backdropElement) => {
-                backdropElement.parentNode.removeChild(backdropElement);
-            });
-
-            // Remove the 'overflow' attribute from the body tag
-            document.body.style.overflow = '';
-            document.body.style.padding = 0;
-        }
-    }
-}
-</script>
 
 <template>
     <nav class="navbar navbar-expand-lg d-flex justify-content-between">
@@ -60,7 +39,7 @@ export default {
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end align-items-center m-auto">
                         <li class="nav-item">
-                            <router-link to="/how-to-start" class="nav-link" @click="dismissOffcanvas">How to start</router-link>
+                            <router-link to="/aboutPage" class="nav-link" @click="dismissOffcanvas">How to start</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/services" class="nav-link" @click="dismissOffcanvas">Services</router-link>
@@ -122,7 +101,28 @@ export default {
     </div>
 </template>
 
+<script>
+export default {
+    methods: {
+        dismissOffcanvas() {
+            const offcanvasElement = document.querySelector('.offcanvas');
+            const backdropElements = document.querySelectorAll('.offcanvas-backdrop');
 
+            // Remove the 'show' class from the offcanvas element
+            offcanvasElement.classList.remove('show');
+
+            // Remove the backdrop elements
+            backdropElements.forEach((backdropElement) => {
+                backdropElement.parentNode.removeChild(backdropElement);
+            });
+
+            // Remove the 'overflow' attribute from the body tag
+            document.body.style.overflow = '';
+            document.body.style.padding = 0;
+        }
+    }
+}
+</script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 nav {
