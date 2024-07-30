@@ -42,7 +42,7 @@
                             <router-link to="/aboutPage" class="nav-link" @click="dismissOffcanvas">How to start</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/services" class="nav-link" @click="dismissOffcanvas">Services</router-link>
+                            <router-link to="/servicePage" class="nav-link" @click="dismissOffcanvas">Services</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/technologies" class="nav-link" @click="dismissOffcanvas">Technologies</router-link>
